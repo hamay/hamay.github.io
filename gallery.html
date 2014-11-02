@@ -1,0 +1,8 @@
+---
+layout: default
+title: Bilder
+---
+
+{% for file in site.static_files %}
+  <img src="{{file.path}}">
+{% endfor %}
