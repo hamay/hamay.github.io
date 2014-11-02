@@ -1,6 +1,12 @@
+---
+---
+
 <!DOCTYPE html>
 
 <meta charset="otf-8">
 
 <title>Hannah</title>
-blsblk 
+ {% for file in site.static_files %}
+ <img src="{{file.path}}">
+ {% endfor %}
+
