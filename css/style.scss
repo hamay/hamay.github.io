@@ -3,7 +3,7 @@
 
 body {
   font-family: georgia, serif;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 3rem;
 }
 
@@ -12,6 +12,10 @@ header {
 	width: 10rem;
 	// oben rechts unten (links)
 	padding: 0 2rem 2rem;
+	opacity: 0.1;
+	&:hover {
+		opacity: 1;
+	}
 
 	a  {
 		display: block;
