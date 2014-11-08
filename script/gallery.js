@@ -24,6 +24,18 @@ var Gallery = function() {
 
   var self = this;
 
+  // Making sure the files are always in the same order
+  files.sort(function(a, b) {
+    if (a > b) {
+      return 1;
+    }
+    if (a < b) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+
   // Now going through all files and putting them in proper lists.
   files.forEach(function(file) {
 
