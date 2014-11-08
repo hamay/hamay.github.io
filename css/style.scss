@@ -8,33 +8,68 @@ body {
 }
 
 header {
-	position: absolute;
-	width: 10rem;
-	// oben rechts unten (links)
-	padding: 0 2rem 2rem;
-	opacity: 0.2;
-	&:hover {
-		opacity: 1;
-	}
+  position: absolute;
+  width: 10rem;
+  // oben rechts unten (links)
+  padding: 0 2rem 2rem;
+  opacity: 0.2;
+  &:hover {
+    opacity: 1;
+  }
 
-	a  {
-		display: block;
-		margin-bottom: 0.6rem;
-		text-decoration: none;
-		color: black;
+  a  {
+    display: block;
+    margin-bottom: 0.6rem;
+    text-decoration: none;
+    color: black;
 
-		&:hover {
-			font-weight: bold;
-		}
+    &:hover {
+      font-weight: bold;
+    }
 
-		&:active {
-			font-weight: bold;
-		}
+    &:active {
+      font-weight: bold;
+    }
 
-	}
+  }
 }
 
 #main {
-	margin-left: 16rem;
-	margin-top: 2rem;
+  margin-left: 16rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+
+.gallery-grid {
+  img {
+    max-width: 180px;
+    max-height: 180px;
+    vertical-align: middle;
+    margin: 0.4em;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0em;
+    color: #ccc;
+    padding: 0.4em 0.6em;
+    &.prev {
+      // margin-right: 1em;
+    }
+    &.next {
+      // margin-left: 0.6em;
+    }
+    &.active {
+      color: #000;
+      border-bottom: 2px solid black;
+    }
+  }
 }
