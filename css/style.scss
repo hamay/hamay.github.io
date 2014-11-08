@@ -12,14 +12,14 @@ header {
 	width: 10rem;
 	// oben rechts unten (links)
 	padding: 0 2rem 2rem;
-	opacity: 0.1;
+	opacity: 0.2;
 	&:hover {
 		opacity: 1;
 	}
 
 	a  {
 		display: block;
-		margin-bottom: 1rem;
+		margin-bottom: 0.6rem;
 		text-decoration: none;
 		color: black;
 

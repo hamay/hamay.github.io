@@ -3,6 +3,48 @@ layout: default
 title: Bilder
 ---
 
-{% for file in site.static_files %}
-  <img src="{{file.path}}">
-{% endfor %}
+
+<img id=gallery-image>
+<button id=test>TEST</button>
+
+
+<script>
+
+
+var myButton = document.getElementById('test');
+
+
+function showNextImage() {
+  document.getElementById('gallery-image').src = '/gallery/home01.jpg';
+}
+
+
+myButton.addEventListener('click', showNextImage);
+
+
+
+/*
+  var files = [];
+
+  {% for file in site.static_files %}
+    files.push('{{file.path}}');
+  {% endfor %}
+
+
+  for (var i = 0; i < files.length; i++) {
+
+    var beginningOfString = files[i].substring(0, 9);
+
+    if (beginningOfString == '/gallery/') {
+      console.log(files[i]);
+    }
+    else {
+      console.log('Invalid file: ' + files[i]);
+    }
+
+  }
+*/
+
+
+</script>
+
