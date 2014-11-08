@@ -42,16 +42,28 @@ header {
 
 
 .gallery-grid {
-  img {
-    max-width: 180px;
-    max-height: 180px;
-    vertical-align: middle;
-
+  .img-container {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
     // Adding a margin to the right and to the bottom
     // (Not adding a margin on all sides, because otherwise it's not in
     // the top left corner anymore)
     margin: 0 0.8em 0.8em 0;
     cursor: pointer;
+    border: 1px solid #f8f8f8;
+    background: #f4f4f4;
+    background-size: cover;
+    background-position: center center;
+    // img {
+    //   display: block;
+    //   max-width: 100%;
+    //   max-height: 100%;
+    //   margin: 0 auto;
+    //   vertical-align: middle;
+    // }
   }
 }
 

@@ -121,10 +121,14 @@ Gallery.prototype.showGallery = function(galleryName, noHistoryPush) {
   galleryGrid.className = 'gallery-grid';
 
   this.galleries[galleryName].files.forEach(function(file) {
-    var img = document.createElement('img');
-    img.src = self.getFileName(galleryName, file);
-    img.addEventListener('click', function() { self.showImage(galleryName, file); });
-    galleryGrid.appendChild(img);
+    var imgContainer = document.createElement('div');
+    imgContainer.className = 'img-container';
+    imgContainer.style.backgroundImage = 'url(' + encodeURIComponent(self.getFileName(galleryName, file)) + ')';
+    // var img = document.createElement('img');
+    // img.src = self.getFileName(galleryName, file);
+    // imgContainer.appendChild(img);
+    imgContainer.addEventListener('click', function() { self.showImage(galleryName, file); });
+    galleryGrid.appendChild(imgContainer);
   });
 
   this.mainElement.appendChild(galleryGrid);
