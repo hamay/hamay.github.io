@@ -46,7 +46,11 @@ header {
     max-width: 180px;
     max-height: 180px;
     vertical-align: middle;
-    margin: 0.4em;
+
+    // Adding a margin to the right and to the bottom
+    // (Not adding a margin on all sides, because otherwise it's not in
+    // the top left corner anymore)
+    margin: 0 0.8em 0.8em 0;
     cursor: pointer;
   }
 }
